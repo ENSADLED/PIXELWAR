@@ -1,11 +1,11 @@
 {
-  "name": "pixel_love2",
-  "version": "1.0.0",
+  "name": "pixel_war",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "start.cjs",
   "type": "module",
   "scripts": {
-    "start": "node index",
+    "start": "node index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "node-fetch": "^2.6.9",
     "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.5.12"
   }
 }

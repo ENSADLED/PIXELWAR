@@ -83,7 +83,7 @@ io.on("connection", (socket) => {
 });
 
 // Server start
-server.listen(3000, () => {
+server.listen(3010, () => {
   console.log("Server started");
 });
 
