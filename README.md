@@ -7,7 +7,7 @@ Original repo : https://github.com/Codiscovery/pixel_love
 
 ## To deploy on cPanel with cloudlinux with node 18
 
-- add a strat.cjs file 
+- add a start.cjs file 
 - add the extension .mjs to your starting file. Here it is : index.js -> index.mjs
 - in your package json check you have : "type :"modules"". Then change your "main" with the .cjs file and don't forget to change also your lauching file with the .mjs extension 
 - in the start.cjs file add 
