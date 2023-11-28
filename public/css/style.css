@@ -1,24 +1,90 @@
 body {
-  background-color: #293241;
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  height: 100vh;
 }
 
 h1 {
-  color: #ee6c4d;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  font-family: "ERROR 441";
+  animation: colorChange 4s infinite;
+  
 }
 
-#color {
-  width : 20px;
-  height : 50px;
+h2 {
+  color: #e20b0b ;
+  font-size: 30px;
+  font-family: "ERROR 441";
+  display: flex;
+  align-items: center;
+  max-width: 700px;
 
 }
-
-#hex {
-  color : #2a3241;
+.color-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Augmentez la marge en haut pour tester */
 }
+
+.color-box {
+  display : 800px;
+  height: 100px;
+  width: 100px;
+  margin-left: 10px;
+  border: 5px solid #96c9b900;
+  transition:0.2s;
+}
+
+.color-box:hover {
+  border-color:#f40e0e;
+}
+
+.color-white {
+  background-color: #eeeeeb;
+}
+.color-yellow {
+  background-color: #f5cd05;
+}
+.color-blue {
+  background-color: #0a25f0;
+}
+.color-red {
+  background-color: #e91111;
+}
+.color-green {
+  background-color: #6ddf86;
+}
+.color-pink {
+  background-color: #e367e3;
+}
+.color-purple{
+  background-color: #851eb8;
+}
+
+
+#remaining-time-container {
+  color: #f70202 ;
+  font-size: 70px;
+  font-family: "ERROR 441";
+  display: flex;
+  align-items: center;
+}
+
+/* Animation pour changer la couleur du texte */
+@keyframes colorChange {
+  0%, 16.666% { color: red; }
+  33.333% { color: blue; }
+  50% { color: green; }
+  66.666% { color: yellow; }
+  83.333% { color: pink; }
+  100% { color: purple; }
+}
+
+@font-face {
+    font-family: 'ERROR 441'; /* Nom de la police (vous pouvez choisir le nom que vous voulez) */
+    src: url('ENSADLED-Regular.woff2') format('woff2'); /* Spécifiez le chemin vers votre fichier de police */
+    /* Vous pouvez également spécifier d'autres formats de police ici, par exemple, woff, ttf, etc. */
+}
+

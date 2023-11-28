@@ -1,18 +1,16 @@
+const onClickColor = ({ callback }) => {
+  const colorBarEl = document.querySelector(".color-bar");
+  colorBarEl.addEventListener("click", ({ target }) => {
+    if (!target.matches(".color-box")) {
+      return;
+    }
 
-//color picker//
-const onClickColor = ({callback}) => {
-  let hexInput = document.querySelector('#hex');
-  let colorInput = document.querySelector('#color'); 
-  colorInput.addEventListener('input', () => {   
-      const color = colorInput.value;
-      hexInput.value = color;
-      if (typeof callback === 'function') {
-          callback(color);
-      }
+    const { color } = target.dataset;
+
+    if (typeof callback === "function") {
+      callback(color);
+    }
   });
 };
 
 export default onClickColor;
-
-
-

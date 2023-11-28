@@ -14,21 +14,17 @@ const generatePixelData = ({
   const colMax = width / pixelSize;
   const rowMax = height / pixelSize;
 
-  const pixelColor = [];
-  const timers = [];
+  const pixelData = [];
 
   for (let rowIndex = 0; rowIndex < rowMax; rowIndex++) {
     const row = [];
-    const rowTimers = [];
     for (let colIndex = 0; colIndex < colMax; colIndex++) {
       row.push(null);
-      rowTimers.push(null);
     }
-    pixelColor.push(row);
-    timers.push(rowTimers);
+    pixelData.push(row);
   }
 
-  return { pixelColor, timers };
+  return pixelData;
 };
 
 export default generatePixelData;
